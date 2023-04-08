@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Logo from './Logo'
+import '../sass/Header.scss'
 
 const Header = () => {
   return (
-    <header>
-      <div>
-        <h2>logo</h2>
-      </div>
+    <header className='header'>
+      <Logo />
       <Navbar />
     </header>
   )

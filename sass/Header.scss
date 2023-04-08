@@ -1,0 +1,77 @@
+@use 'variables';
+
+.header {
+	position: relative;
+
+	.icon {
+		position: absolute;
+		left: 10px;
+		top: 15px;
+		height: 40px;
+		color: variables.$primaryColor;
+		cursor: pointer;
+
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+
+	.logo {
+		padding: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+
+		span {
+			font-family: variables.$headerFont;
+			font-size: 2.3em;
+			color: variables.$primaryColor;
+		}
+	}
+
+	.navbar {
+		background-color: variables.$primaryLightColor;
+		position: fixed;
+		left: -100%;
+		width: 100%;
+
+		@media (min-width: 768px) {
+			left: 0%;
+			transition: left 0s;
+			position: static;
+		}
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+
+			@media (min-width: 768px) {
+				flex-direction: row;
+			}
+		}
+		.link {
+			text-decoration: none;
+			color: #000;
+			width: 100%;
+			@media (min-width: 768px) {
+				width: auto;
+			}
+			li {
+				padding: 10px 15px;
+				font-size: 1.2em;
+			}
+
+			&-active{
+				background-color: #cbffe6;
+			}
+		}
+
+		&-active {
+			left: 0%;
+		}
+	}
+}

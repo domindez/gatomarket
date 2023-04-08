@@ -1,6 +1,10 @@
 import React from 'react'
 import '../sass/globals.scss'
 import Header from '@/components/Header'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import WorkInProgress from '@/components/WorkInProgress'
+config.autoAddCss = false
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,6 +15,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html>
       <body>
+        <WorkInProgress />
         <Header />
         {children}
       </body>
