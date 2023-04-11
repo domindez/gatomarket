@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import WorkInProgress from '@/components/WorkInProgress'
+import { barlowCondensed } from '@/resources/fonts'
 config.autoAddCss = false
 
 export const metadata = {
@@ -13,7 +14,7 @@ export const metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html>
+    <html className={barlowCondensed.className}>
       <body>
         <WorkInProgress />
         <Header />
