@@ -1,7 +1,7 @@
 // eslint-disable-next-line camelcase
-import { Barlow_Condensed, Odibee_Sans } from 'next/font/google'
+import { Saira_Condensed, Odibee_Sans } from 'next/font/google'
 
-export const barlowCondensed = Barlow_Condensed({
+export const sairaCondensed = Saira_Condensed({
   subsets: ['latin'],
   display: 'swap',
   weight: '400'

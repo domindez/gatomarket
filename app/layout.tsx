@@ -3,8 +3,8 @@ import '../sass/globals.scss'
 import Header from '@/components/Header'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import WorkInProgress from '@/components/WorkInProgress'
-import { barlowCondensed } from '@/resources/fonts'
+// import WorkInProgress from '@/components/WorkInProgress'
+import { sairaCondensed } from '@/resources/fonts'
 config.autoAddCss = false
 
 export const metadata = {
@@ -14,9 +14,9 @@ export const metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html className={barlowCondensed.className}>
+    <html className={sairaCondensed.className}>
       <body>
-        <WorkInProgress />
+        {/* <WorkInProgress /> */}
         <Header />
         {children}
       </body>
