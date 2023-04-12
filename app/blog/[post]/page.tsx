@@ -1,10 +1,9 @@
 import { getFilesBySlug } from '@/lib/mdx'
-import { Params } from 'next/dist/shared/lib/router/utils/route-matcher'
 import React from 'react'
 import MDXComponents from '@/components/MDXComponents'
 import '../../../sass/PostPage.scss'
 
-const page = async ({ params } : Params) => {
+const page = async ({ params } : any) => {
   const { content, frontmatter } = await getFilesBySlug(params.post, MDXComponents)
   console.log('object :>> ', frontmatter)
   return (
