@@ -1,0 +1,42 @@
+@use 'variables';
+
+.breadcrumb {
+	margin-top: 10px;
+	background-color: variables.$primaryColor;
+	border-radius: 0px 3px 3px 0px;
+	width: fit-content;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+		padding: 0px 10px 0px 20px;
+		width: fit-content;
+		
+
+    li {
+			span{
+				margin-right: 5px;
+				color: green;
+			}
+      a {
+        color: #fff; /* color del enlace */
+        text-decoration: none; /* quitar subrayado del enlace */
+        font-weight: 400; /* peso de fuente */
+        border-bottom: 2px solid transparent; /* borde inferior invisible por defecto */
+				
+        &:hover {
+          color: #000000; /* color del enlace al pasar el ratón por encima */
+        }
+
+        &:focus {
+          outline: none; /* quitar el contorno al hacer clic en el enlace */
+        }
+      }
+
+      &:last-child a {
+      }
+    }
+  }
+}

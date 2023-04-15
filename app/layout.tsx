@@ -5,6 +5,7 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 // import WorkInProgress from '@/components/WorkInProgress'
 import { sairaCondensed } from '@/resources/fonts'
+import Footer from '@/components/Footer'
 config.autoAddCss = false
 
 export const metadata = {
@@ -19,6 +20,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         {/* <WorkInProgress /> */}
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
