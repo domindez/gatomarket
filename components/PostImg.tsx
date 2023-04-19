@@ -11,7 +11,7 @@ const PostImg = ({ src, float } : {src:string, float:string}) => {
           ? 'post-img float left'
           : 'post-img'
       }
-      src={require(`../img/${src}.jpg`)} width={800} height={300} alt={src}
+      src={require(`@/public/img/${src}.jpg`)} width={800} height={300} alt={src}
       quality={100}
     />
   )

@@ -2,9 +2,13 @@
 
 .breadcrumb {
 	margin-top: 10px;
-	background-color: variables.$primaryColor;
 	border-radius: 0px 3px 3px 0px;
 	width: fit-content;
+  margin-bottom: -20px;
+
+  @media (min-width: 768px) {
+    margin-top: 20px;
+  }
 
   ul {
     list-style: none;
@@ -21,7 +25,7 @@
 				color: green;
 			}
       a {
-        color: #fff; /* color del enlace */
+        color: #797979; /* color del enlace */
         text-decoration: none; /* quitar subrayado del enlace */
         font-weight: 400; /* peso de fuente */
         border-bottom: 2px solid transparent; /* borde inferior invisible por defecto */
@@ -32,6 +36,10 @@
 
         &:focus {
           outline: none; /* quitar el contorno al hacer clic en el enlace */
+        }
+
+        @media (min-width: 768px) {
+          color: gray;
         }
       }
 

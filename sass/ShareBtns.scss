@@ -1,0 +1,43 @@
+.share-btns-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	p {
+		text-align: center;
+		font-size: 1.4em;
+		color: #16bb53;
+	}
+
+	.share-btns {
+		display: block;
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+		margin-bottom: 30px;
+		padding-left: auto;
+		background-color: #fff;
+
+		.icon {
+			font-size: 2em;
+			margin: 0px 10px;
+			cursor: pointer;
+			transition: transform 0.2s ease-in-out;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		.whatsapp {
+			color: #25d366;
+		}
+		.facebook {
+			color: #1877f2;
+		}
+		.twitter {
+			color: #00aeef;
+		}
+	}
+}

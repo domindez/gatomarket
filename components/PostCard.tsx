@@ -13,7 +13,7 @@ interface Props{
 }
 
 const PostCard = ({ title, extract, author, slug } : Props) => {
-  const postImage = require(`../img/${slug}.jpg`)
+  const postImage = require(`@/public/img/${slug}.jpg`)
 
   return (
     <Link href={`blog/${slug}`}>

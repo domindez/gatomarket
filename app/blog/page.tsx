@@ -3,7 +3,7 @@ import { getAllFilesMetadata } from '@/lib/mdx'
 import React from 'react'
 import '../../sass/Blog-main-page.scss'
 
-interface Post {
+export interface Post {
 title: string
 extract: string
 author: string
@@ -12,8 +12,8 @@ categories: string
 date: string
 }
 
-const Blog = async () => {
-  const posts = await getAllFilesMetadata()
+const Blog = () => {
+  const posts = getAllFilesMetadata()
 
   return (
     <section className='blog-main-page'>

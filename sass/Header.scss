@@ -63,6 +63,9 @@
 			li {
 				padding: 10px 15px;
 				font-size: 1.2em;
+				@media (min-width: 768px) {
+					padding: 0px 15px;
+				}
 			}
 
 			&-active{
