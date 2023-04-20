@@ -11,7 +11,9 @@ numToShow: number
 const BlogCategory = ({ category, numToShow } : Categories) => {
   const posts: Array<any> = getAllFilesMetadata()
   const filteredPosts = posts.filter((post) => {
-    const categories = post.categories.split(',').map((category: string) => category.trim())
+    const categories = post.categories
+      .split(',')
+      .map((category: string) => category.trim().replace(/\s+/g, '-'))
     return categories.includes(category)
   })
 

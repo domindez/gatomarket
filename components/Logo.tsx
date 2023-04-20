@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <div className='logo'>
       <Image src={logo} width={50} height={50} alt='logo-mundo-gato' />
-      <span className={odibeeSans.className}>MundoGato</span>
+      <span className={odibeeSans.className}>GatoMundo</span>
     </div>
   )
 }

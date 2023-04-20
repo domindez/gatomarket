@@ -1,7 +1,9 @@
+import Blog from './blog/page'
+
 export default function Home () {
   return (
     <main>
-      Esta es mi pagina de gatos
+      <Blog />
     </main>
   )
 }

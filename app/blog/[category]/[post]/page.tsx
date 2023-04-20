@@ -1,11 +1,11 @@
 import { getAllFilesMetadata, getFilesBySlug } from '@/lib/mdx'
 import React from 'react'
 import MDXComponents from '@/components/MDXComponents'
-import '../../../sass/PostPage.scss'
+import '../../../../sass/PostPage.scss'
 import Breadcrumb from '@/components/Breadcrumb'
-import ShareBtns from '../../../components/ShareBtns'
+import ShareBtns from '../../../../components/ShareBtns'
 import type { Metadata } from 'next'
-import { Post } from '../page'
+import { Post } from '../../page'
 import PostCard from '@/components/PostCard'
 
 export const metadata: Metadata = {}
@@ -14,7 +14,6 @@ const page = async ({ params } : any) => {
   const { content, frontmatter } = await getFilesBySlug(params.post, MDXComponents)
   const posts = getAllFilesMetadata()
   setMetaData(frontmatter)
-  console.log('metadata.title :>> ', metadata.title)
 
   return (
     <div className='post-page'>

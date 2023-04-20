@@ -11,13 +11,17 @@ const Breadcrumb = () => {
   return (
     <nav className='breadcrumb'>
       <ul>
-        <li><Link href='/'>Inicio</Link></li>
         {urlPath.map((pathPart, i) => {
+          let displayPathPart = pathPart
+          if (i === 1) { // solo para el segundo pathPart
+            const words = pathPart.split('-')
+            displayPathPart = words[0]
+          }
           const href = '/' + urlPath.slice(0, i + 1).join('/')
           return (
             <li key={href}><span>\</span>
               <Link href={href}>
-                {pathPart}
+                {displayPathPart}
               </Link>
             </li>
           )

@@ -12,11 +12,11 @@ interface Props{
   date: string
 }
 
-const PostCard = ({ title, extract, author, slug } : Props) => {
+const PostCard = ({ title, extract, categories, slug } : Props) => {
   const postImage = require(`@/public/img/${slug}.jpg`)
 
   return (
-    <Link href={`blog/${slug}`}>
+    <Link href={`blog/${categories[0].replace(/\s+/g, '-')}/${slug}`}>
       <div className='post-card'>
         <Image src={postImage} alt={title} width={200} height={150} />
         <div className='text-card'>
