@@ -62,7 +62,7 @@ function setMetaData (frontmatter: Record<string, unknown>) {
     title: `${frontmatter.title as string} | Gatomundo.com`,
     description: frontmatter.extract as string,
     image: {
-      url: `http://localhost:3000/img/${frontmatter.img}.jpg`,
+      url: `http://www.gatomundo.com/img/${frontmatter.img}.jpg`,
       width: 1200,
       height: 630
     }
@@ -73,7 +73,7 @@ function setMetaData (frontmatter: Record<string, unknown>) {
     title: `${frontmatter.title as string} | Gatomundo.com`,
     description: frontmatter.extract as string,
     image: {
-      url: `http://localhost:3000/img/${frontmatter.img}.jpg`,
+      url: `http://www.gatomundo.com/img/${frontmatter.img}.jpg`,
       alt: `${frontmatter.title as string} | Gatomundo.com`
     }
   }
