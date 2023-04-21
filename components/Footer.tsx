@@ -7,8 +7,8 @@ import logo from '../img/logo.svg'
 const Footer = () => {
   const links = [
     { label: 'Inicio', url: '/' },
-    { label: 'Pienso', url: '/pienso' },
-    { label: 'Comida Húmeda', url: '/comida-humeda' },
+    { label: 'Pienso', url: 'blog/pienso' },
+    { label: 'Comida Húmeda', url: 'blog/comida-humeda' },
     { label: 'Blog', url: '/blog' }
   ]
   return (
