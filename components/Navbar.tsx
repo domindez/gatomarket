@@ -11,8 +11,8 @@ const Navbar = () => {
 
   const links = [
     { label: 'Inicio', url: '/' },
-    { label: 'Pienso', url: '/pienso-para-gatos' },
-    { label: 'Comida Húmeda', url: '/comida-humeda' },
+    { label: 'Pienso', url: 'blog/pienso-para-gatos' },
+    { label: 'Comida Húmeda', url: 'blog/comida-humeda' },
     { label: 'Blog', url: '/blog' }
   ]
 

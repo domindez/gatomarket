@@ -1,0 +1,29 @@
+Escribe como un experto SEO y experto en gatos un artículo para mi blog de productos para gatos. Sigue estas directrices:
+1. resuelve la intención de búsqueda de un usuario que quiere saber cual es -####-
+2. el post deberá tener una extensión de 500 palabras.
+3. la palabra clave principal para las optimizaciones SEO es -####-
+4. las palabras clave secundarias son -####-
+5. incluye un único H1 al inicio
+6. puedes usar tantos H2 y H3 como creas necesario para satisfacer la intención de búsqueda del artículo, no es necesario que los optimices todos para palabras clave.
+7. el artículo debe ser informacional, ya que los usuarios están en el primer nivel de consciencia del customer journey, alejados de la compra.
+8. Maximiza la retención del usuario, para que terminen de leer el artículo, usa un loop abierto al inicio para generar intriga.
+9. No añadas contenido que no aporte valor, no inventes datos, todo el artículo debe ser útil.
+10. Utiliza un lenguaje directo y sencillo, que entienda un niño de 10 años.
+11. Crea un top 5 de los mejores rascadores para gatos y básate en los 5 rascadores más vendidos en amazon españa, pero no digas nada sobre Amazon. Explica brevemente las bondades de cada uno.
+11. Escríbelo todo en formato markdown en un bloque de código para que lo pueda copiar y pegar.
+12. Al inicio del documento incluye un encabezado del markdown como este: 
+---
+title: 'El mejor pienso para gatos esterilizados: ranking de los 5 mejores'
+extract: 'Todo lo que debes tener en cuenta para elegir un pienso de calidad'
+author: 'Daniel Domínguez'
+img: 'mejor-pienso-gatos-esterilizados'
+categories: 'pienso para gatos, gatos esterilizados'
+keywords: 'pienso para gatos, gatos esterilizados, pienso para gatos con sobrepeso, mejor pienso para gatos'
+date: '2023-04-11'
+---
+13. Después de una breve introducción, pon una tabla de contenidos como esta,ten en cuenta que para que los enlaces de la tabla funcionen tienens que ponerlo así en el cuerpo del artículo <a name="conclusion"></a>:
+<nav className="toc">
+1. [Por qué es importante elegir un buen juguete](#importancia)
+2. [Los 5 mejores juguetes para gatos en 2023](#mejores-juguetes)
+3. [Conclusión](#conclusion)
+</nav>

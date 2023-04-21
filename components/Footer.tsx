@@ -28,8 +28,7 @@ const Footer = () => {
         </nav>
       </div>
       <div className='bottom-bar'>
-        <p>2023 · Web by</p>
-        <Link href='https://trivify.es/'>Trivify.es</Link>
+        <p>2023 · Web by  <Link href='https://trivify.es/'>Trivify.es</Link></p>
       </div>
     </footer>
   )
