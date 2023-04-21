@@ -55,27 +55,20 @@ function setMetaData (frontmatter: Record<string, unknown>) {
   metadata.description = frontmatter.extract as string
   metadata.keywords = keywords.split(',')
   metadata.robots = { index: true, follow: true }
-
+  console.log(`http://www.gatomundo.com/img/${frontmatter.img}.jpg`)
   const openGraph = {
     type: 'website',
     url: 'http://mundogato.com',
     title: `${frontmatter.title as string} | Gatomundo.com`,
     description: frontmatter.extract as string,
-    image: {
-      url: `http://www.gatomundo.com/img/${frontmatter.img}.jpg`,
-      width: 1200,
-      height: 630
-    }
+    images: `http://www.gatomundo.com/img/${frontmatter.img}.jpg`
   }
   const twitter = {
     card: 'summary_large_image',
     site: '@mundogato',
     title: `${frontmatter.title as string} | Gatomundo.com`,
     description: frontmatter.extract as string,
-    image: {
-      url: `http://www.gatomundo.com/img/${frontmatter.img}.jpg`,
-      alt: `${frontmatter.title as string} | Gatomundo.com`
-    }
+    images: `http://www.gatomundo.com/img/${frontmatter.img}.jpg`
   }
   metadata.openGraph = openGraph
   metadata.twitter = twitter
