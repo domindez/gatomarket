@@ -7,7 +7,7 @@ import { faShare } from '@fortawesome/free-solid-svg-icons'
 import '../sass/ShareBtns.scss'
 
 const ShareBtns = ({ title } : {title: string}) => {
-  const url = `http://localhost:3000${usePathname()}`
+  const url = `http://www.gatomundo.com${usePathname()}`
   const share = () => {
     navigator.share({
       title: 'Give Me a Beer',
