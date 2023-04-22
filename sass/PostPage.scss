@@ -88,7 +88,6 @@
 				}
 			}
 
-			ul,
 			ol {
 				margin-top: 20px;
 				list-style: none;
@@ -110,6 +109,30 @@
 						height: 30px;
 						text-align: center;
 						border-radius: 50%;
+					}
+				}
+			}
+
+			ul {
+				margin-top: 20px;
+				list-style: none;
+
+				li {
+					position: relative;
+					margin-bottom: 10px;
+					padding-left: 40px;
+					line-height: 30px;
+
+					&::before {
+						content: '';
+						position: absolute;
+						left: 15px;
+						top: 9px;
+						background-color: variables.$primaryColor;
+						color: white;
+						width: 10px;
+						height: 10px;
+						text-align: center;
 					}
 				}
 			}
@@ -143,7 +166,7 @@
 			}
 		}
 
-		hr{
+		hr {
 			margin-bottom: 30px;
 			width: 90%;
 			margin-left: auto;

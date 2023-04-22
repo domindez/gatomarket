@@ -9,7 +9,7 @@ Escribe como un experto SEO y experto en gatos un artículo para mi blog de prod
 8. Maximiza la retención del usuario, para que terminen de leer el artículo, usa un loop abierto al inicio para generar intriga.
 9. No añadas contenido que no aporte valor, no inventes datos, todo el artículo debe ser útil.
 10. Utiliza un lenguaje directo y sencillo, que entienda un niño de 10 años.
-11. Crea un top 5 de los mejores rascadores para gatos y básate en los 5 rascadores más vendidos en amazon españa, pero no digas nada sobre Amazon. Explica brevemente las bondades de cada uno.
+11. Crea un top 5 de los mejores -####- y básate en los 5 rascadores con mejor valoración en amazon españa, pero no digas nada sobre Amazon. Explica brevemente las bondades de cada uno.
 11. Escríbelo todo en formato markdown en un bloque de código para que lo pueda copiar y pegar.
 12. Al inicio del documento incluye un encabezado del markdown como este: 
 ---
@@ -23,7 +23,7 @@ date: '2023-04-11'
 ---
 13. Después de una breve introducción, pon una tabla de contenidos como esta,ten en cuenta que para que los enlaces de la tabla funcionen tienens que ponerlo así en el cuerpo del artículo <a name="conclusion"></a>:
 <nav className="toc">
-1. [Por qué es importante elegir un buen juguete](#importancia)
-2. [Los 5 mejores juguetes para gatos en 2023](#mejores-juguetes)
-3. [Conclusión](#conclusion)
+1. ...
+2. ...
+3. ...
 </nav>

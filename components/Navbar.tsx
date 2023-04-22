@@ -12,7 +12,7 @@ const Navbar = () => {
   const links = [
     { label: 'Inicio', url: '/' },
     { label: 'Pienso', url: 'blog/pienso-para-gatos' },
-    { label: 'Comida Húmeda', url: 'blog/comida-humeda' },
+    { label: 'Juguetes', url: 'blog/juguetes-para-gatos' },
     { label: 'Blog', url: '/blog' }
   ]
 
