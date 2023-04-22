@@ -2,11 +2,10 @@
 import BlogCategory from '@/components/BlogCategory'
 import '../../../sass/Blog-main-page.scss'
 
-const Pienso = ({ params } : any) => {
-  console.log(params.category)
+const Category = ({ params, searchParams } : any) => {
   return (
-    <BlogCategory category={params.category} numToShow={4} />
+    <BlogCategory category={params.category} cardsPerPage={6} page={searchParams.page} />
   )
 }
 
-export default Pienso
+export default Category

@@ -1,7 +1,6 @@
-import PostCard from '@/components/PostCard'
-import { getAllFilesMetadata } from '@/lib/mdx'
 import React from 'react'
 import '../../sass/Blog-main-page.scss'
+import BlogCategory from '@/components/BlogCategory'
 
 export interface Post {
 title: string
@@ -12,23 +11,9 @@ categories: string
 date: string
 }
 
-const Blog = () => {
-  const posts = getAllFilesMetadata()
-
+const Blog = ({ searchParams } : any) => {
   return (
-    <section className='blog-main-page'>
-      {posts.map((post : Post) => (
-        <PostCard
-          title={post.title}
-          extract={post.extract}
-          slug={post.slug}
-          author={post.author}
-          key={post.slug}
-          categories={post.categories.split(',')}
-          date={post.date}
-        />
-      ))}
-    </section>
+    <BlogCategory category={null} cardsPerPage={6} page={searchParams.page} />
   )
 }
 

@@ -1,9 +1,9 @@
 import Blog from './blog/page'
 
-export default function Home () {
+export default function Home ({ searchParams } : any) {
   return (
     <main>
-      <Blog />
+      <Blog searchParams={searchParams} />
     </main>
   )
 }

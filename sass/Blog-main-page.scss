@@ -2,7 +2,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 40px 20px;
+	padding: 40px 20px 0px;
 	gap: 30px;
 	min-height: 60vh;
 
@@ -12,4 +12,10 @@
 		margin-right: auto;
 	
 	}
+}
+
+.pagination{
+	display: block;
+	width: fit-content;
+	margin: 20px auto;
 }
