@@ -7,9 +7,7 @@ const nextConfig = {
     staticFolder: '/public'
   }
 }
-const withSitemap = require('next-sitemap')(
-  require('./next-sitemap.js')
-)
 
-module.exports = withSitemap({})
-module.exports = nextConfig
+const withSitemap = require('next-sitemap')(require('./next-sitemap.js'))
+
+module.exports = { ...nextConfig, ...withSitemap }
