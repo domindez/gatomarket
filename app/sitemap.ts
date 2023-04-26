@@ -3,15 +3,19 @@ import { MetadataRoute } from 'next'
 export default function sitemap (): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://acme.com',
+      url: 'https://gatomundo.com',
       lastModified: new Date()
     },
     {
-      url: 'https://acme.com/about',
+      url: 'https://gatomundo/blog',
       lastModified: new Date()
     },
     {
-      url: 'https://acme.com/blog',
+      url: 'https://gatomundo/blog',
+      lastModified: new Date()
+    },
+    {
+      url: 'https://gatomundo.com/blog/fuentes-para-gatos/mejores-fuentes-gatos',
       lastModified: new Date()
     }
   ]
