@@ -1,3 +1,4 @@
+import { MetadataRoute } from 'next'
 import { getAllFilesMetadata } from '../lib/mdx'
 
 interface FileMetadata {
@@ -11,8 +12,8 @@ interface FileMetadata {
   slug: string;
 }
 
-async function getSitemapItems () {
-  const allPosts = await getAllFilesMetadata()
+function getSitemapItems () {
+  const allPosts = getAllFilesMetadata()
   return allPosts.map((post: FileMetadata) => ({
     url: `https://gatomundo.com/blog/${post.categories[0]}/${post.slug}`,
     lastModified: new Date()
@@ -20,6 +21,22 @@ async function getSitemapItems () {
   }))
 }
 
-export default async function sitemap (): Promise<any> {
-  return await getSitemapItems()
+export default function sitemap (): MetadataRoute.Sitemap {
+  const items = getSitemapItems()
+
+  return [
+    {
+      url: 'https://acme.com',
+      lastModified: new Date()
+    },
+    {
+      url: 'https://acme.com/about',
+      lastModified: new Date()
+    },
+    {
+      url: 'https://acme.com/blog',
+      lastModified: new Date()
+    },
+    ...items
+  ]
 }
