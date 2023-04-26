@@ -6,8 +6,9 @@ const nextConfig = {
   publicRuntimeConfig: {
     staticFolder: '/public'
   }
-}
+};
 
-const withSitemap = require('next-sitemap')(require('./next-sitemap.js'))
-
-module.exports = { ...nextConfig, ...withSitemap }
+(async () => {
+  const withSitemap = (await import('next-sitemap')).default(require('./next-sitemap.js'))
+  module.exports = { ...nextConfig, ...withSitemap }
+})()
