@@ -21,6 +21,6 @@ async function getSitemapItems () {
   }))
 }
 
-export default async function sitemap (): Promise<{ url: string; lastModified?: string | Date | undefined; }[]> {
+export default async function sitemap (): Promise<any> {
   return await getSitemapItems()
 }
