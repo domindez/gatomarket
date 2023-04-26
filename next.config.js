@@ -6,9 +6,9 @@ const nextConfig = {
   publicRuntimeConfig: {
     staticFolder: '/public'
   }
-};
+}
 
-(async () => {
-  const withSitemap = (await import('next-sitemap')).default(require('./next-sitemap.js'))
-  module.exports = { ...nextConfig, ...withSitemap }
-})()
+const withSitemap = require('next-sitemap')(require('./next-sitemap.js'))
+
+// eslint-disable-next-line import/no-anonymous-default-export
+export default { ...nextConfig, ...withSitemap }
