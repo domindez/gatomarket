@@ -8,7 +8,4 @@ const nextConfig = {
   }
 }
 
-const withSitemap = require('next-sitemap')(require('./next-sitemap.js'))
-
-// Utiliza la sintaxis de exportación de CommonJS
-module.exports = { ...nextConfig, ...withSitemap }
+module.exports = nextConfig
