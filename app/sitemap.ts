@@ -1,4 +1,3 @@
-import { MetadataRoute } from 'next'
 import { getAllFilesMetadata } from '../lib/mdx'
 
 interface FileMetadata {
