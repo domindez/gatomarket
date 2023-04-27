@@ -3,7 +3,6 @@ import '../sass/globals.scss'
 import Header from '@/components/Header'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-// import WorkInProgress from '@/components/WorkInProgress'
 import { sairaCondensed } from '@/resources/fonts'
 import Footer from '@/components/Footer'
 config.autoAddCss = false
@@ -17,7 +16,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html className={sairaCondensed.className}>
       <body>
-        {/* <WorkInProgress /> */}
         <Header />
         {children}
         <Footer />
