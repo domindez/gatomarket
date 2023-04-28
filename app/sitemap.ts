@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap (): MetadataRoute.Sitemap {
   const allposts = getAllFilesMetadata()
-  const sitemap = allposts.map((post: any) => {
+  const sitemap: MetadataRoute.Sitemap = allposts.map((post: any) => {
     return {
       url: `https://gatomundo.com/blog/${post.categories.split(',')[0].replace(/\s/g, '-')}/${post.slug}`,
       lastModified: new Date(post.date)
