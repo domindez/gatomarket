@@ -21,10 +21,3 @@ export default function sitemap (): MetadataRoute.Sitemap {
     ...sitemap
   ]
 }
-
-/*
-    {
-      url: 'https://gatomundo.com/blog/fuentes-para-gatos/mejores-fuentes-gatos',
-      lastModified: new Date()
-    }
-*/
