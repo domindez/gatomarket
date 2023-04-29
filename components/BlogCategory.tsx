@@ -40,7 +40,7 @@ const BlogCategory = ({ category, cardsPerPage, page = 1 } : Categories) => {
         ))}
       </section>
 
-      <Pagination page={page} category={category} />
+      <Pagination page={page} category={category} left={page > 1 && true} right={posts.length >= page * cardsPerPage && true} />
     </>
   )
 }

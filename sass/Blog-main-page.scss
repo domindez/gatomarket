@@ -1,3 +1,5 @@
+@use 'variables';
+
 .blog-main-page{
 	display: flex;
 	flex-wrap: wrap;
@@ -15,7 +17,25 @@
 }
 
 .pagination{
-	display: block;
+	display: flex;
 	width: fit-content;
-	margin: 20px auto;
+	margin: 40px auto;
+	gap: 20px;;
+
+	.arrows{
+		background-color: variables.$primaryColor;
+		color: white;
+		padding: 5px 9px;
+		border-radius: 3px;
+		transition: box-shadow 0.2s ease-in-out;
+
+		&:hover{
+			box-shadow: 2px 2px 0px #ffb2f5;
+		}
+	}
+
+	.n-page{
+		font-size: 1.2em;
+		line-height: 28px;
+	}
 }
