@@ -20,9 +20,16 @@ const BlogCategory = ({ category, cardsPerPage, page = 1 } : Categories) => {
     return categories.includes(category)
   })
 
+  const sortedFilteredPosts = filteredPosts.sort((a, b) => {
+    const dateA = new Date(a.date)
+    const dateB = new Date(b.date)
+    // Para ordenar de forma ascendente (del más antiguo al más reciente)
+    return dateB.getTime() - dateA.getTime()
+  })
+
   const start = (page - 1) * cardsPerPage
   const end = start + cardsPerPage
-  const paginatedPosts = filteredPosts.slice(start, end)
+  const paginatedPosts = sortedFilteredPosts.slice(start, end)
 
   return (
     <>
