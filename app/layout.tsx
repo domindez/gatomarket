@@ -5,6 +5,7 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { sairaCondensed } from '@/resources/fonts'
 import Footer from '@/components/Footer'
+import Analytics from '@/components/Analytics'
 config.autoAddCss = false
 
 export const metadata = {
@@ -15,7 +16,7 @@ export const metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-
+      <Analytics />
       <html className={sairaCondensed.className}>
         <body>
           <Header />
