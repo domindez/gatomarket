@@ -13,7 +13,7 @@ date: string
 
 const Blog = ({ searchParams } : any) => {
   return (
-    <BlogCategory category={null} cardsPerPage={4} page={searchParams.page} />
+    <BlogCategory category={null} cardsPerPage={6} page={searchParams.page} />
   )
 }
 
