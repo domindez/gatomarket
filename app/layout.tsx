@@ -5,7 +5,7 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { sairaCondensed } from '@/resources/fonts'
 import Footer from '@/components/Footer'
-import Analytics from '@/components/Analytics'
+import Script from 'next/script'
 config.autoAddCss = false
 
 export const metadata = {
@@ -16,7 +16,10 @@ export const metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <Analytics />
+      <Script
+        src='https://www.googletagmanager.com/ns.html?id=GTM-KDFWVBD'
+        strategy='afterInteractive'
+      />
       <html className={sairaCondensed.className}>
         <body>
           <Header />
