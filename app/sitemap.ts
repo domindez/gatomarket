@@ -31,6 +31,11 @@ export default function sitemap (): MetadataRoute.Sitemap {
       categories: 'juguetes para gatos, gatos aburridos',
       date: '2023-04-29',
       slug: 'gato-aburrido-solo-en-casa'
+    },
+    {
+      categories: 'arena para gatos, gatos',
+      date: '2023-05-02',
+      slug: 'mejor-arena-gatos'
     }
   ]
   const sitemap: MetadataRoute.Sitemap = allposts.map((post: any) => {
