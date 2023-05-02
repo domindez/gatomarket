@@ -29,7 +29,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           `
         }}
       />
-      <html className={sairaCondensed.className}>
+      <html className={sairaCondensed.className} lang='es'>
         <body>
           <Header />
           {children}
